@@ -16,4 +16,8 @@ class Project extends Model
         "content",
         "cover_img"
     ];
+
+    public function types() {
+        return $this->belongsTo(Type::class);
+    }
 }

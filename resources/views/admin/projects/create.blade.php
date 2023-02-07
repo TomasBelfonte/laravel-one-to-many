@@ -33,6 +33,16 @@
             @enderror
             </div>
 
+                        <div class="mb-3">
+            <label class="form-label">Tipologia</label>
+            <textarea name="content" cols="30" rows="5" class="form-control @error('content') is-invalid @enderror">{{ old('content') }}</textarea>
+            @error('content')
+                <div class="invalid-feedback">
+                {{ $message }}
+                </div>
+            @enderror
+            </div>
+
             <div class="mb-3">
             <label class="form-label">Immagine di copertina</label>
             <input type="file" class="form-control  @error('cover_img') is-invalid @enderror" name="cover_img"
