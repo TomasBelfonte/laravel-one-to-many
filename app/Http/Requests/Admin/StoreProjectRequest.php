@@ -29,8 +29,7 @@ class StoreProjectRequest extends FormRequest
     public function rules()
     {
         return [
-            "cover_img" => "string|url",
-            "author" => "required|string",
+            "cover_img" => "string|url|nullable",
             "title" => "required|string",
             "content" => "required|string",
         ];

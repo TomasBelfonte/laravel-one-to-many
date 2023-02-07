@@ -25,9 +25,7 @@
 
     <div class="card-body">
         <div class="card-title">{{ $project->title }}</div>
-        <div class="card-title">Autore: {{ $project->author }}</div>
         <p class="card-text">Contenuto: {{ $project->content }}</p>
-        <div><strong>Stato:</strong> {{ $post->status }} </div>
     </div>
     </div>
 @endsection

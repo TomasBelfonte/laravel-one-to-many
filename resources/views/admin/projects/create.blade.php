@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @php
-    $title = 'Nuovo Progetto';
+    $title = 'Il Nuovo Progetto';
 @endphp
 
 @section('title', $title)
